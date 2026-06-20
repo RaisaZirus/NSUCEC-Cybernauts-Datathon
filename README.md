@@ -42,21 +42,6 @@ goal — see [`docs/lessons_learned.md`](docs/lessons_learned.md).
 ---
 
 
-## Quickstart
-
-```bash
-git clone https://github.com/<your-org>/fictipay-survival.git
-cd fictipay-survival
-pip install -r requirements.txt
-
-# Point the pipeline at your local copy of the competition data (see data/README.md)
-python -m src.run --data-dir /path/to/public --out prediction.csv
-```
-
-The same logic, narrated cell by cell, is in [`notebooks/solution.ipynb`](notebooks/solution.ipynb).
-
----
-
 ## Problem summary
 
 - **Churn definition:** a customer churns on the date marking 30 consecutive days without any
