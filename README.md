@@ -41,30 +41,6 @@ goal — see [`docs/lessons_learned.md`](docs/lessons_learned.md).
 
 ---
 
-## Repository layout
-
-```
-fictipay-survival/
-├── README.md                  This file.
-├── LICENSE
-├── requirements.txt
-├── data/
-│   └── README.md              Schema, churn definition, how to obtain the data.
-├── notebooks/
-│   └── solution.ipynb         End-to-end competition notebook (clean run).
-├── src/
-│   ├── features.py            Polars feature engineering (4 feature families).
-│   ├── model.py               Discrete-time survival model (per-horizon LightGBM).
-│   ├── metrics.py             c-index + IPCW Integrated Brier Score.
-│   └── run.py                 CLI: build features → train → write submission.
-├── docs/
-│   ├── methodology.md         The modelling approach, in depth.
-│   ├── features.md            Catalogue of all 41 features with hypotheses.
-│   └── lessons_learned.md     What worked, what saturated, what to skip.
-└── figures/                   Generated plots (KM curves, importances, calibration).
-```
-
----
 
 ## Quickstart
 
